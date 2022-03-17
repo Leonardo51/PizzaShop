@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Pizza Shop</h1>
+        <form>
+            <fieldset>
+                <legend>Customer:</legend>
+                <div class="row">
+                    <div>
+                        <label for="firstname">First</label>
+                        <input id="firstname" name="first_name" type="text">
+                    </div>
+                    <div>
+                        <label for="lastname">Last</label>
+                        <input id="lastname" name="last_name" type="text">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="row">
+                <fieldset>
+                    <legend>Size:</legend>
+                    <div>
+                        <input type="radio" id="small" name="size">
+                        <label for="small">Small 10"</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="size">
+                        <label for="medium">Medium 12"</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large" name="size">
+                        <label for="large">Large 14"</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="xlarge" name="size">
+                        <label for="xlarge">X-Large 16"</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Toppings Left:</legend>
+                    <div>
+                        <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="blackOlives" name="blackOlives" value="blackOlives">
+                        <label for="blackOlives">Black Olives</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="onions" name="onions" value="onions">
+                        <label for="onions">Onions</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mushroom" name="mushroom" value="mushroom">
+                        <label for="mushroom">Mushroom</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Toppings Right:</legend>
+                    <div>
+                        <input type="checkbox" id="pepperoni2" name="pepperoni2" value="pepperoni2">
+                        <label for="pepperoni2">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="blackOlive" name="blackOlive" value="blackOlive">
+                        <label for="blackOlive">Black Olives</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="onion2" name="onion2" value="onion2">
+                        <label for="onion2">Onions</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mushroom2" name="mushroom2" value="mushroom2">
+                        <label for="mushroom2">Mushroom</label>
+                    </div>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend>Pick Up or Delivery:</legend>
+                <label for="container">Please Choose One</label>
+                <select name="container" id="container">
+                    <option value="pickUp">Pick Up</option>
+                    <option value="delivery">Delivery</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Special: </legend>
+                <label for="SpecialRequests">Special Requests:</label>
+                <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="10" placeholder="Allergic to peanuts, substitutions, etc."></textarea>
+            </fieldset>
+            <button type="button" onclick="alert('Free Today for our Grand Opening!')">Calculate Cost</button>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
