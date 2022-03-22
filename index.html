@@ -61,6 +61,10 @@
                         <input type="checkbox" id="mushroom" name="mushroom" value="mushroom">
                         <label for="mushroom">Mushroom</label>
                     </div>
+                    <div>
+                        <input type="checkbox" id="greenPepper" name="greenPepper" value="greenPepper">
+                        <label for="greenPepper">Green Pepper</label>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Toppings Right:</legend>
@@ -80,6 +84,10 @@
                         <input type="checkbox" id="mushroom2" name="mushroom2" value="mushroom2">
                         <label for="mushroom2">Mushroom</label>
                     </div>
+                    <div>
+                        <input type="checkbox" id="greenPepper2" name="greenPepper2" value="greenPepper2">
+                        <label for="greenPepper2">Green Pepper</label>
+                    </div>
                 </fieldset>
             </div>
             <fieldset>
@@ -91,9 +99,34 @@
                 </select>
             </fieldset>
             <fieldset>
-                <legend>Special: </legend>
-                <label for="SpecialRequests">Special Requests:</label>
-                <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="10" placeholder="Allergic to peanuts, substitutions, etc."></textarea>
+                <legend>Address :</legend>
+                <div class="row">
+                    <div>
+                        <label for="address1">Address Line 1</label>
+                        <input id="address1" name="address1" type="text" placeholder="Street Address">
+                    </div>
+                    <div>
+                        <label for="address2">Address Line 2</label>
+                        <input id="address2" name="address2" type="text" placeholder="Apt,Suite,etc.(optional)">
+                    </div>
+                </div>
+                <div>
+                    <label for="city">City</label>
+                    <input id="city" name="city" type="text"
+                </div>
+                <div>
+                    <label for="state">State</label>
+                    <input id="state" name="state" type="text">
+                </div>
+                <div>
+                    <label for="zipcode">Zip Code</label>
+                    <input id="zipcode" name="zipcode" type="text">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Special Requests: </legend>
+                <label for="SpecialRequests"></label>
+                <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="10" placeholder="Design, Delivery Instructions, etc."></textarea>
             </fieldset>
             <button type="button" onclick="alert('Free Today for our Grand Opening!')">Calculate Cost</button>
             <button type="submit">Submit Order</button>
